@@ -1,0 +1,327 @@
+html {
+
+position:relative;
+min-height:100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.wrapper {
+
+    /*padding-top: 125px;*/
+    background-color:white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#banner {
+    display: block;
+    margin: 0 auto;
+    height:17%;
+    background-color: white;
+}
+
+.main{
+	margin: auto;
+    margin-top: 14%;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	text-align:center;
+
+}
+
+.main p {
+    text-align: center;
+    padding-left: 5px;
+}
+
+.clientLogin{
+	margin: auto;
+    margin-top: 14%;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.wrapper ul {
+    list-style-type: none;
+    left:0;
+	  top:15%;
+    margin-top:0;
+    background-color: #163b58;
+
+    position: fixed;/* Make it stick, even on scroll */
+    overflow: hidden;
+}
+
+li{
+	float:left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a.active {
+    background-color: #d60000;
+    color:white;
+}
+
+li a:hover:not(.active) {
+    background-color: #163b58;
+    color: #d60000;
+}
+
+h1{
+	margin: auto;
+	width: 50%;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+tr, td{
+  text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
+.tableHeader{
+  background-color: #d60000;
+  color: white;
+}
+
+a.loginButtonLeft{
+	background-color: #163b58;
+	color: white;
+	display: block;
+	text-decoration: none;
+	max-width: 100%;
+	border: 1px solid #23211F;
+	margin-left: auto;
+    margin-right:auto;
+	padding: 5px;
+    font-size: 2em;
+	border-radius: 5px;
+	height: 15%;
+	text-align:center;
+  margin-top: 5px;
+}
+
+a.loginButtonRight{
+	background-color: #163b58;
+	color: white;
+	display: block;
+	text-decoration: none;
+	max-width: 100%;
+	border: 1px solid #23211F;
+	margin: auto;
+	padding: 5px;
+	font-size: 2em;
+	border-radius: 5px;
+	height: 15%;
+	text-align:center;
+
+}
+
+a.loginButtonLeft:hover{
+	background-color: white;
+	color: #d60000;
+}
+
+a.loginButtonRight:hover{
+	background-color: white;
+	color: #d60000;
+}
+
+form{
+	width: 50%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+input[type=text], [type=email], [type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	resize:none;
+  height:150px;
+}
+
+label{
+  padding: 5px;
+
+}
+
+form.jobRequest{
+  text-align: left;
+  padding: 10px;
+}
+input[type=submit]{
+	text-decoration: none;
+	font-size:1.2em;
+	border:2px solid white;
+	display:block;
+	background-color:#163b58;
+	width:100%;
+	margin-top:5px;
+	color:white;
+	padding:5px;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+.about1{
+  background-color: #163b58;
+  border-radius: 5px;
+  color:white;
+  padding:7px;
+}
+
+.about2{
+  border-radius: 5px;
+  color:#163b58;
+padding:5px;
+}
+input[type=submit]:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #d60000;
+    color:white;
+}
+
+img.stock{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img.stockBig{
+    max-width: 80%;
+
+
+}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #1DDD25; /* Green background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 5px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    top: 30px; /* 30px from the bottom */
+}
+
+#snackbar1 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: red; /* Green background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 5px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    top: 30px; /* 30px from the bottom */
+}
+
+#snackbar1.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+footer{
+	text-align: center;
+	padding: 5px;
+	background-color:#163b58;
+	color: white;
+	margin: auto;
+	border-radius: 5px;
+}
+
